@@ -49,7 +49,7 @@ public class DefuseTheBomb {
     // keep track of total
 
 
-    
+
 //    0 ms, faster than 100.00%
 //    Memory Usage: 39 MB, less than 65.67%
     public int[] decrypt(int[] code, int k) {
