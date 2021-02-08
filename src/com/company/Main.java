@@ -1,47 +1,56 @@
 package com.company;
 
 import com.company.linkedlist.ListNode;
-import com.company.linkedlist.MiddleOfTheLinkedList;
-import org.junit.jupiter.api.BeforeEach;
+import com.company.linkedlist.MergeTwoSortedLists;
 
 public class Main {
 
-
-
     public static void main(String[] args) {
+        ListNode listNode11 = new ListNode();
+        ListNode listNode12 = new ListNode();
+        ListNode listNode13 = new ListNode();
+        ListNode listNode14 = new ListNode();
+        ListNode listNode15 = new ListNode();
 
-//        ListNode head;
-//        MiddleOfTheLinkedList middle;
-//
-//        middle = new MiddleOfTheLinkedList();
-//        head = new ListNode();
-//        ListNode node2 = new ListNode();
-//        ListNode node3 = new ListNode();
-//        ListNode node4 = new ListNode();
-//        ListNode node5 = new ListNode();
-//        ListNode node6 = new ListNode();
-//
-//        head.val = 1;
-//        node2.val = 2;
-//        node3.val = 3;
-//        node4.val = 4;
-//        node5.val = 5;
-//        node6.val = 6;
-//
-////        head.next = node2;
-////        node2.next = node3;
-////        node3.next = node4;
-////        node4.next = node5;
-////        node5.next = node6;
-//
-//        MiddleOfTheLinkedList middleOfTheLinkedList = new MiddleOfTheLinkedList();
-//
-//        System.out.println(middleOfTheLinkedList.middleNode(head));
+        ListNode listNode21 = new ListNode();
+        ListNode listNode22 = new ListNode();
+        ListNode listNode23 = new ListNode();
+        ListNode listNode24 = new ListNode();
+        ListNode listNode25 = new ListNode();
 
-    int i = 4 % 2;
-        System.out.println(i);
+        listNode11.val = 1;
+        listNode12.val = 2;
+        listNode13.val = 4;
+//        listNode14.val = 7;
+//        listNode15.val = 8;
 
+        listNode21.val = 1;
+        listNode22.val = 3;
+        listNode23.val = 4;
+//        listNode24.val = 5;
+//        listNode25.val = 6;
 
+        listNode11.next = listNode12;
+        listNode12.next = listNode13;
+//        listNode13.next = listNode14;
+//        listNode14.next = listNode15;
 
+        listNode21.next = listNode22;
+        listNode22.next = listNode23;
+//        listNode23.next = listNode24;
+//        listNode24.next = listNode25;
+
+        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        printList(mergeTwoSortedLists.mergeTwoLists(listNode11, listNode21));
     }
+
+    private static void printList(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val + " -> ");
+            node = node.next;
+        }
+        System.out.print("null");
+    }
+
+
 }
